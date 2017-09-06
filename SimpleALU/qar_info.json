@@ -1,0 +1,7 @@
+{
+	"common_dir" : "E:/BasicElecDsn/ALUonFPGA/",
+	"acds_version" : "Version 17.0.0",
+	"platform" : "windows",
+	"os" : "Windows 8.1",
+	"qpf" : "simpleALU.qpf"
+}
