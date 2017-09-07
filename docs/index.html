@@ -3,13 +3,37 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
+    <meta name="theme-color" content="#343A40">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <link rel="icon" href="computer45.png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <script>
+      function openurl(url)
+      {
+        window.open(url)
+      }
+    </script>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <div class="jumbotron jumbotron-fluid bg-dark">
+      <div class="container">
+        <div class="maindiv" style="padding: 5rem 0;">
+          <h1 class="text-center text-primary">SimpleALU</h1>
+          <p class="text-center text-secondary">SimpleALU是一个使用Verilog HDL编写的4位ALU，实现了八个功能</br>A加B A加1 A减B A减1 A与B A或B A非 A异或B</p>
+          <div class="text-center">
+            <button onclick=openurl("https://github.com/Justdoitonetwothree/SimpleALU") type="button" class="btn btn-primary btn-lg">进入Github</button>
+            <button onclick=openurl("https://github.com/Justdoitonetwothree/SimpleALU/blob/master/SimpleALU/simpleALU.v") type="button" class="btn btn-primary btn-lg">查看主程序</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>
+        Design in SCNU
+      </p>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
