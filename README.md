@@ -1,7 +1,7 @@
 # SimpleALU
 
 ### 简介
-SimpleALU是一个十分简单的ALU，部分设计参考74181，使用Verilog HDL编写，这是它的主程序<a href="https://github.com/Justdoitonetwothree/SimpleALU/blob/master/SimpleALU/simpleALU.v">SimpleALU</a>
+SimpleALU是一个十分简单的ALU，部分设计参考74181，使用Verilog HDL编写，这是它的主程序<a href="https://github.com/Justdoitonetwothree/SimpleALU/blob/master/SimpleALU/simpleALU.v">SimpleALU.v</a>
 
 ### 结构
 - 4位ALU
