@@ -62,7 +62,10 @@ assign cContainer[4] = m?0:(s[1]?(~innerC[3]):innerC[3]);
 
 
 //结果的运算
-assign f = virtualP^cContainer;
+assign f[0] = virtualP[0]^cContainer[0];
+assign f[1] = virtualP[1]^cContainer[1];
+assign f[2] = virtualP[2]^cContainer[2];
+assign f[3] = virtualP[3]^cContainer[3];
 
 //引出输出
 assign co = cContainer[4];

@@ -64,7 +64,6 @@ set_global_assignment -name EDA_TEST_BENCH_NAME simpleALU_vlg_tst -section_id ed
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id simpleALU_vlg_tst
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME simpleALU_vlg_tst -section_id simpleALU_vlg_tst
 set_global_assignment -name EDA_TEST_BENCH_FILE simulation/modelsim/simpleALU.vt -section_id simpleALU_vlg_tst
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
 set_location_assignment PIN_135 -to a[3]
 set_location_assignment PIN_136 -to a[2]
@@ -75,13 +74,14 @@ set_location_assignment PIN_129 -to b[2]
 set_location_assignment PIN_132 -to b[1]
 set_location_assignment PIN_133 -to b[0]
 set_location_assignment PIN_127 -to ci
-set_location_assignment PIN_144 -to f[3]
-set_location_assignment PIN_143 -to f[2]
-set_location_assignment PIN_142 -to f[1]
-set_location_assignment PIN_141 -to f[0]
-set_location_assignment PIN_1 -to co
-set_location_assignment PIN_31 -to s[0]
-set_location_assignment PIN_30 -to s[1]
-set_location_assignment PIN_28 -to m
-set_location_assignment PIN_2 -to p
-set_location_assignment PIN_3 -to g
+set_location_assignment PIN_2 -to f[3]
+set_location_assignment PIN_1 -to f[2]
+set_location_assignment PIN_144 -to f[1]
+set_location_assignment PIN_143 -to f[0]
+set_location_assignment PIN_143 -to co
+set_location_assignment PIN_141 -to s[0]
+set_location_assignment PIN_142 -to s[1]
+set_location_assignment PIN_126 -to m
+set_location_assignment PIN_10 -to p
+set_location_assignment PIN_7 -to g
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

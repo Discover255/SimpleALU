@@ -1,5 +1,5 @@
 Analysis & Synthesis report for simpleALU
-Tue Sep 05 20:23:34 2017
+Thu Sep 07 11:50:23 2017
 Quartus II 32-bit Version 12.0 Build 178 05/31/2012 SJ Full Version
 
 
@@ -41,7 +41,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                   ;
 +------------------------------------+-------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Sep 05 20:23:34 2017     ;
+; Analysis & Synthesis Status        ; Successful - Thu Sep 07 11:50:23 2017     ;
 ; Quartus II 32-bit Version          ; 12.0 Build 178 05/31/2012 SJ Full Version ;
 ; Revision Name                      ; simpleALU                                 ;
 ; Top-level Entity Name              ; simpleALU                                 ;
@@ -239,7 +239,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 12.0 Build 178 05/31/2012 SJ Full Version
-    Info: Processing started: Tue Sep 05 20:23:29 2017
+    Info: Processing started: Thu Sep 07 11:50:19 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off simpleALU -c simpleALU
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file simplealu.v
@@ -258,9 +258,8 @@ Warning (10230): Verilog HDL assignment warning at simpleALU.v(57): truncated va
 Warning (10230): Verilog HDL assignment warning at simpleALU.v(58): truncated value with size 32 to match size of target (1)
 Warning (10230): Verilog HDL assignment warning at simpleALU.v(59): truncated value with size 32 to match size of target (1)
 Warning (10230): Verilog HDL assignment warning at simpleALU.v(60): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at simpleALU.v(65): truncated value with size 5 to match size of target (4)
-Warning (10230): Verilog HDL assignment warning at simpleALU.v(69): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at simpleALU.v(70): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at simpleALU.v(72): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at simpleALU.v(73): truncated value with size 32 to match size of target (1)
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -268,9 +267,9 @@ Info (21057): Implemented 48 device resources after synthesis - the final resour
     Info (21058): Implemented 12 input pins
     Info (21059): Implemented 7 output pins
     Info (21061): Implemented 29 logic cells
-Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 16 warnings
-    Info: Peak virtual memory: 283 megabytes
-    Info: Processing ended: Tue Sep 05 20:23:34 2017
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 15 warnings
+    Info: Peak virtual memory: 280 megabytes
+    Info: Processing ended: Thu Sep 07 11:50:24 2017
     Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:03
 
