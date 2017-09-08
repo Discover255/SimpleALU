@@ -32,7 +32,8 @@ SimpleALU拥有12个输入，A和B是两个4bit二进制数，Ci是进位，另�
 ### FPGA上的运行
 
 SimpleALU是在Altera CycloneIV E EP4CE6E22C8上调试的。提交的工程已经为19个接口分配了引脚。以下是引脚图</br>
-<img src = "https://justdoitonetwothree.github.io/SimpleALU/pin.png"></img></br>
+    ![image](https://justdoitonetwothree.github.io/SimpleALU/pin.png)
+</br>
 FPGA在开发板上的引脚图，由多个JTAG引出</br>
-<img src = "https://justdoitonetwothree.github.io/SimpleALU/fpgapin.png"></img>
+    ![image](https://justdoitonetwothree.github.io/SimpleALU/fpgapin.png)
 在开发板上使用键盘和LED进行输入和输出，我自己制作的键盘LED的PCB的用于测试的verilog程序也上传至~/testPCB
