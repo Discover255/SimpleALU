@@ -1,6 +1,6 @@
 Analysis & Synthesis report for simpleALU
-Thu Sep 07 11:50:23 2017
-Quartus II 32-bit Version 12.0 Build 178 05/31/2012 SJ Full Version
+Fri Sep 08 19:46:04 2017
+Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Standard Edition
 
 
 ---------------------
@@ -14,48 +14,50 @@ Quartus II 32-bit Version 12.0 Build 178 05/31/2012 SJ Full Version
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Elapsed Time Per Partition
- 10. Analysis & Synthesis Messages
+  9. Post-Synthesis Netlist Statistics for Top Partition
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 1991-2012 Altera Corporation
-Your use of Altera Corporation's design tools, logic functions 
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
-to the terms and conditions of the Altera Program License 
-Subscription Agreement, Altera MegaCore Function License 
-Agreement, or other applicable license agreement, including, 
-without limitation, that your use is for the sole purpose of 
-programming logic devices manufactured by Altera and sold by 
-Altera or its authorized distributors.  Please refer to the 
-applicable agreement for further details.
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
 
 
 
-+--------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                   ;
-+------------------------------------+-------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Sep 07 11:50:23 2017     ;
-; Quartus II 32-bit Version          ; 12.0 Build 178 05/31/2012 SJ Full Version ;
-; Revision Name                      ; simpleALU                                 ;
-; Top-level Entity Name              ; simpleALU                                 ;
-; Family                             ; Cyclone IV E                              ;
-; Total logic elements               ; 29                                        ;
-;     Total combinational functions  ; 29                                        ;
-;     Dedicated logic registers      ; 0                                         ;
-; Total registers                    ; 0                                         ;
-; Total pins                         ; 19                                        ;
-; Total virtual pins                 ; 0                                         ;
-; Total memory bits                  ; 0                                         ;
-; Embedded Multiplier 9-bit elements ; 0                                         ;
-; Total PLLs                         ; 0                                         ;
-+------------------------------------+-------------------------------------------+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Fri Sep 08 19:46:04 2017           ;
+; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Standard Edition ;
+; Revision Name                      ; simpleALU                                       ;
+; Top-level Entity Name              ; simpleALU                                       ;
+; Family                             ; Cyclone IV E                                    ;
+; Total logic elements               ; 29                                              ;
+;     Total combinational functions  ; 29                                              ;
+;     Dedicated logic registers      ; 0                                               ;
+; Total registers                    ; 0                                               ;
+; Total pins                         ; 19                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
@@ -72,7 +74,7 @@ applicable agreement for further details.
 ; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
 ; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
 ; Preserve fewer node names                                                  ; On                 ; On                 ;
-; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; OpenCore Plus hardware evaluation                                          ; Enable             ; Enable             ;
 ; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
 ; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
 ; State Machine Processing                                                   ; Auto               ; Auto               ;
@@ -125,7 +127,7 @@ applicable agreement for further details.
 ; Report Connectivity Checks                                                 ; On                 ; On                 ;
 ; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
 ; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
-; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; PowerPlay Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
 ; HDL message level                                                          ; Level2             ; Level2             ;
 ; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
 ; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
@@ -137,10 +139,10 @@ applicable agreement for further details.
 ; SDC constraint protection                                                  ; Off                ; Off                ;
 ; Synthesis Effort                                                           ; Auto               ; Auto               ;
 ; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
 ; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
 ; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
 ; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
-; Synthesis Seed                                                             ; 1                  ; 1                  ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
@@ -149,25 +151,24 @@ applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 2           ;
-; Maximum allowed            ; 2           ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
-;     1 processor            ; 100.0%      ;
-;     2 processors           ;   0.0%      ;
+;     Processor 1            ; 100.0%      ;
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                               ;
-+----------------------------------+-----------------+------------------------+------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path ; Library ;
-+----------------------------------+-----------------+------------------------+------------------------------+---------+
-; simpleALU.v                      ; yes             ; User Verilog HDL File  ; G:/SimpleALU/simpleALU.v     ;         ;
-+----------------------------------+-----------------+------------------------+------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                            ;
++----------------------------------+-----------------+------------------------+-------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path              ; Library ;
++----------------------------------+-----------------+------------------------+-------------------------------------------+---------+
+; simpleALU.v                      ; yes             ; User Verilog HDL File  ; E:/BasicElecDsn/git/SimpleALU/simpleALU.v ;         ;
++----------------------------------+-----------------+------------------------+-------------------------------------------+---------+
 
 
 +-------------------------------------------------------+
@@ -192,6 +193,9 @@ applicable agreement for further details.
 ;     -- I/O registers                        ; 0       ;
 ;                                             ;         ;
 ; I/O pins                                    ; 19      ;
+;                                             ;         ;
+; Embedded Multiplier 9-bit elements          ; 0       ;
+;                                             ;         ;
 ; Maximum fan-out node                        ; m~input ;
 ; Maximum fan-out                             ; 18      ;
 ; Total fan-out                               ; 128     ;
@@ -199,13 +203,13 @@ applicable agreement for further details.
 +---------------------------------------------+---------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |simpleALU                 ; 29 (29)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 19   ; 0            ; |simpleALU          ;              ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                      ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+; |simpleALU                 ; 29 (29)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 19   ; 0            ; |simpleALU          ; simpleALU   ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -224,12 +228,30 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 19                          ;
+; cycloneiii_lcell_comb ; 32                          ;
+;     normal            ; 32                          ;
+;         1 data inputs ; 3                           ;
+;         2 data inputs ; 1                           ;
+;         3 data inputs ; 12                          ;
+;         4 data inputs ; 16                          ;
+;                       ;                             ;
+; Max LUT depth         ; 7.00                        ;
+; Average LUT depth     ; 5.41                        ;
++-----------------------+-----------------------------+
+
+
 +-------------------------------+
 ; Elapsed Time Per Partition    ;
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -237,29 +259,30 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 32-bit Analysis & Synthesis
-    Info: Version 12.0 Build 178 05/31/2012 SJ Full Version
-    Info: Processing started: Thu Sep 07 11:50:19 2017
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 17.0.0 Build 595 04/25/2017 SJ Standard Edition
+    Info: Processing started: Fri Sep 08 19:45:51 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off simpleALU -c simpleALU
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file simplealu.v
-    Info (12023): Found entity 1: simpleALU
+    Info (12023): Found entity 1: simpleALU File: E:/BasicElecDsn/git/SimpleALU/simpleALU.v Line: 1
 Info (12127): Elaborating entity "simpleALU" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at simpleALU.v(17): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at simpleALU.v(18): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at simpleALU.v(19): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at simpleALU.v(20): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at simpleALU.v(22): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at simpleALU.v(23): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at simpleALU.v(24): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at simpleALU.v(25): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at simpleALU.v(56): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at simpleALU.v(57): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at simpleALU.v(58): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at simpleALU.v(59): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at simpleALU.v(60): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at simpleALU.v(72): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at simpleALU.v(73): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at simpleALU.v(17): truncated value with size 32 to match size of target (1) File: E:/BasicElecDsn/git/SimpleALU/simpleALU.v Line: 17
+Warning (10230): Verilog HDL assignment warning at simpleALU.v(18): truncated value with size 32 to match size of target (1) File: E:/BasicElecDsn/git/SimpleALU/simpleALU.v Line: 18
+Warning (10230): Verilog HDL assignment warning at simpleALU.v(19): truncated value with size 32 to match size of target (1) File: E:/BasicElecDsn/git/SimpleALU/simpleALU.v Line: 19
+Warning (10230): Verilog HDL assignment warning at simpleALU.v(20): truncated value with size 32 to match size of target (1) File: E:/BasicElecDsn/git/SimpleALU/simpleALU.v Line: 20
+Warning (10230): Verilog HDL assignment warning at simpleALU.v(22): truncated value with size 32 to match size of target (1) File: E:/BasicElecDsn/git/SimpleALU/simpleALU.v Line: 22
+Warning (10230): Verilog HDL assignment warning at simpleALU.v(23): truncated value with size 32 to match size of target (1) File: E:/BasicElecDsn/git/SimpleALU/simpleALU.v Line: 23
+Warning (10230): Verilog HDL assignment warning at simpleALU.v(24): truncated value with size 32 to match size of target (1) File: E:/BasicElecDsn/git/SimpleALU/simpleALU.v Line: 24
+Warning (10230): Verilog HDL assignment warning at simpleALU.v(25): truncated value with size 32 to match size of target (1) File: E:/BasicElecDsn/git/SimpleALU/simpleALU.v Line: 25
+Warning (10230): Verilog HDL assignment warning at simpleALU.v(56): truncated value with size 32 to match size of target (1) File: E:/BasicElecDsn/git/SimpleALU/simpleALU.v Line: 56
+Warning (10230): Verilog HDL assignment warning at simpleALU.v(57): truncated value with size 32 to match size of target (1) File: E:/BasicElecDsn/git/SimpleALU/simpleALU.v Line: 57
+Warning (10230): Verilog HDL assignment warning at simpleALU.v(58): truncated value with size 32 to match size of target (1) File: E:/BasicElecDsn/git/SimpleALU/simpleALU.v Line: 58
+Warning (10230): Verilog HDL assignment warning at simpleALU.v(59): truncated value with size 32 to match size of target (1) File: E:/BasicElecDsn/git/SimpleALU/simpleALU.v Line: 59
+Warning (10230): Verilog HDL assignment warning at simpleALU.v(60): truncated value with size 32 to match size of target (1) File: E:/BasicElecDsn/git/SimpleALU/simpleALU.v Line: 60
+Warning (10230): Verilog HDL assignment warning at simpleALU.v(72): truncated value with size 32 to match size of target (1) File: E:/BasicElecDsn/git/SimpleALU/simpleALU.v Line: 72
+Warning (10230): Verilog HDL assignment warning at simpleALU.v(73): truncated value with size 32 to match size of target (1) File: E:/BasicElecDsn/git/SimpleALU/simpleALU.v Line: 73
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -267,10 +290,10 @@ Info (21057): Implemented 48 device resources after synthesis - the final resour
     Info (21058): Implemented 12 input pins
     Info (21059): Implemented 7 output pins
     Info (21061): Implemented 29 logic cells
-Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 15 warnings
-    Info: Peak virtual memory: 280 megabytes
-    Info: Processing ended: Thu Sep 07 11:50:24 2017
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:03
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 16 warnings
+    Info: Peak virtual memory: 615 megabytes
+    Info: Processing ended: Fri Sep 08 19:46:04 2017
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:31
 
 
